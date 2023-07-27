@@ -1,0 +1,134 @@
+@import "../../helpers/color.scss";
+
+.banner {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-top: -91px;
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.movies {
+  margin-bottom: 100px !important;
+
+  .headline {
+    margin-bottom: 40px;
+    hr {
+      color: $font-secondary;
+    }
+    h2 {
+      color: $font-secondary;
+      font-weight: 400;
+
+      text-align: center;
+    }
+  }
+
+  .card-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 20px;
+
+    .card-inner {
+      background: $secondary-color;
+      transition: all 0.3s;
+
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+      .card-top {
+        height: 300px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card-info {
+        color: $font-primary;
+        padding: 20px 20px;
+        height: 100%;
+        h4 {
+          font-size: 22px;
+          font-weight: 400;
+          margin-top: 20px;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: $font-secondary;
+        }
+      }
+    }
+  }
+}
+
+.movie-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: $font-primary;
+  font-weight: 400;
+
+  .section-left {
+    .movie-title {
+      font-size: 40px;
+      color: $font-primary;
+    }
+
+    .movie-rating {
+      padding-left: 3px;
+      margin-top: 20px;
+      color: $font-secondary;
+      display: flex;
+
+      span {
+        margin-right: 20px;
+      }
+
+      .fa-star {
+        color: #ff9e00;
+      }
+
+      .fa-thumbs-up {
+        color: #fafafa;
+      }
+
+      .fa-film {
+        color: rgb(191, 213, 214);
+      }
+
+      .fa-calender {
+        color: peachpuff;
+      }
+    }
+
+    .movie-plot {
+      margin-top: 20px;
+      line-height: 1.8rem;
+    }
+
+    .movie-info > div span:first-child {
+      padding: 10px 0px;
+      color: $font-primary;
+      font-weight: 600;
+      width: 100px;
+      display: inline-block;
+    }
+
+    .movie-info > div span {
+      color: $font-secondary;
+    }
+  }
+
+  .section-right {
+    margin-left: 30px;
+  }
+}
