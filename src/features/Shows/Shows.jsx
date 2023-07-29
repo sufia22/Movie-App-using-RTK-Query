@@ -6,9 +6,7 @@ const Shows = () => {
   return (
     <div className=" movies mx-4 ">
       <div className="headline">
-        <hr />
         <h2>Shows</h2>
-        <hr />
       </div>
 
       <div className="card-item ">

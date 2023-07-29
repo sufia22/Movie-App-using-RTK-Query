@@ -3,7 +3,6 @@ import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import "./Movies.scss";
 import Shows from "../Shows/Shows";
-import banner from "../../components/images/banner.png";
 import { useGetAllMoviesQuery } from "./movieApiSlice";
 
 const Movies = () => {
@@ -24,15 +23,10 @@ const Movies = () => {
   return (
     <>
       <Header />
-      <div className="banner">
-        <img src={banner} alt="" />
-      </div>
 
-      <div className=" movies mx-4">
+      <div className=" movies mt-3 mx-4">
         <div className="headline ">
-          <hr />
           <h2>Movies</h2>
-          <hr />
         </div>
 
         <div className="card-item ">
